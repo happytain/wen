@@ -84,7 +84,12 @@
     
     <div id="about"><a href="https://happytain.github.io/wen/about.html">About</a></div>
 
-    <div class="largerimage">
+    <div class="largerimage">  
+
+         <div class="item-start">
+          <img class="image" src="assets/img0.jpg">
+         </div>
+
     </div>
 
     <div class="caption"><p></p></div>
@@ -97,15 +102,19 @@
 </body>
 
   <script type="text/javascript">
-   
+  
+
+  $( document ).ready(function() {
+    $(".item-start").find('.image').css('display', 'block');
+  });
 
 
     function switchMedia(width) {
 
-
     if (width.matches) { 
 
       $(".name").find('a').css({"position":"absolute","top":"6px","right":"6px","margin":"9px",});
+
 
       $(".item").click(function(){
         let specific = $(this).clone();
@@ -116,6 +125,7 @@
         $(".largerimage").find('.date').css('display', 'none');
         $(".largerimage").find('.blurb').css('display', 'none');
         $(".largerimage").find('.item').css('padding', '0px');
+        $(".largerimage").find('.item-start').css('display', 'none');
       });
 
     } 

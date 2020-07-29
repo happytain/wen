@@ -37,12 +37,17 @@ font-size:17pt;
   padding-bottom: 20px; 
 }
 
+.item-start{
+  width:90%;
+  height:auto;
+  margin-top: 5px;
+}
+
 .image{
  width: 100%;
  height: auto;
  display: none;
 }
-
 
 .article{
  width: 100%;
@@ -135,6 +140,7 @@ font-size:17pt;
     align-items: flex-start;
     padding:7px;
     width:100vw;
+    height:auto;
     /*border: dotted 1pt blue;*/
     }
 
